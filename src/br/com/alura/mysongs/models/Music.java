@@ -1,6 +1,6 @@
 package br.com.alura.mysongs.models;
 
-public class music extends Audio{
+public class Music extends Audio{
 
     private String album;
     private String singer;
@@ -28,5 +28,16 @@ public class music extends Audio{
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public int getClassification() {
+
+        if (this.getTotalPlays() > 2000) {
+            return 10;
+        } else  {
+            return 7;
+        }
+
     }
 }

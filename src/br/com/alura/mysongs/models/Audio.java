@@ -1,16 +1,16 @@
 package br.com.alura.mysongs.models;
 
 public class Audio {
-    private string title;
+    private String title;
     private int totalPlays;
     private int totalLikes;
-    private int rating;
+    private int classification;
 
-    public string getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(string title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -22,8 +22,8 @@ public class Audio {
         return totalLikes;
     }
 
-    public int getRating() {
-        return rating;
+    public int getClassification() {
+        return classification;
     }
 
     public void like() {
